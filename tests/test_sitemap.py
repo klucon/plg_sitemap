@@ -2,17 +2,14 @@ from __future__ import annotations
 
 import json
 
-import pytest
 from httpx import AsyncClient
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.plugins.plg_sitemap.models import SitemapSettings
 from src.plugins.plg_sitemap.service import (
     build_sitemap,
     get_or_create_settings,
     save_settings,
 )
-
 
 # ---------------------------------------------------------------------------
 # service layer

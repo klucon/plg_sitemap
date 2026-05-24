@@ -6,7 +6,6 @@ from xml.sax.saxutils import escape
 
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-
 from src.core.hooks import hooks
 
 from .models import SitemapSettings

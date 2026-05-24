@@ -16,6 +16,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install QA tools
+        run: python -m pip install --upgrade ruff
+
+      - name: Lint
+        run: ruff check .
+
+      - name: Compile
+        run: python -m compileall -q src tests
+
       - name: Validate manifest
         run: |
           python - <<'PY'
@@ -69,4 +83,3 @@ jobs:
           files: |
             plg_sitemap-*.zip
             SHA256SUMS
-

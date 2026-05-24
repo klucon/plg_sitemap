@@ -9,11 +9,11 @@ if TYPE_CHECKING:
 _PLUGIN_DIR = Path(__file__).parent
 
 
-def setup(registry: "ComponentRegistry") -> None:
+def setup(registry: ComponentRegistry) -> None:
     from jinja2 import FileSystemLoader
-
     from src.core.templates import admin_templates
     from src.i18n.translator import translator
+
     from src.plugins.plg_sitemap import admin, web
 
     templates_dir = _PLUGIN_DIR / "templates"
