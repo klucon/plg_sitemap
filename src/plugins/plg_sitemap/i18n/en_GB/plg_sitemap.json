@@ -1,0 +1,12 @@
+{
+  "extensions.name.plg_sitemap": "XML Sitemap",
+  "permissions.sitemap.manage": "Manage sitemap",
+
+  "sitemap.admin.heading": "XML Sitemap",
+  "sitemap.admin.enabled": "Sitemap enabled",
+  "sitemap.admin.include_homepage": "Include homepage",
+  "sitemap.admin.custom_urls": "Custom URLs (JSON array)",
+  "sitemap.admin.save": "Save settings",
+  "sitemap.admin.preview": "Preview sitemap",
+  "sitemap.admin.updated_at": "Last updated"
+}

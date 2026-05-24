@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "name": "plg_sitemap",
+  "type": "plugin",
+  "vendor": "klucon",
+  "extension_id": "klucon/plg_sitemap",
+  "version": "0.1.0",
+  "display_name": "Sitemap XML",
+  "display_name_key": "extensions.name.plg_sitemap",
+  "description": "Generuje /sitemap.xml pro vyhledávače. Ostatní komponenty mohou přidávat URL přes hook sitemap.collect_urls.",
+  "license": "MIT",
+  "author": {
+    "name": "KLUCON",
+    "url": "https://klucon.cz"
+  },
+  "links": {
+    "homepage": "https://marketplace.klucon.cz",
+    "repository": "https://github.com/klucon/plg_sitemap"
+  },
+  "compatibility": {
+    "core_min": "0.2.0",
+    "core_max": null,
+    "python": ">=3.12",
+    "database": ["mysql", "postgresql"]
+  },
+  "package": {
+    "entrypoint": "src.plugins.plg_sitemap",
+    "setup_function": "setup",
+    "admin_router": "admin.router"
+  },
+  "permissions": [
+    {
+      "key": "sitemap.manage",
+      "label": "permissions.sitemap.manage"
+    }
+  ],
+  "i18n": {
+    "domain": "plg_sitemap",
+    "locales_path": "i18n",
+    "required_locales": ["cs_CZ", "en_GB"]
+  },
+  "migrations": {
+    "enabled": false,
+    "path": "migrations"
+  },
+  "security": {
+    "requires_signature": true,
+    "capabilities": [
+      "plugin.hooks",
+      "admin.routes",
+      "web.routes",
+      "database.read",
+      "database.write"
+    ]
+  },
+  "marketplace": {
+    "category": "seo",
+    "tags": ["sitemap", "seo", "xml", "robots"],
+    "featured": false
+  },
+  "changelog": "První vydání: generování sitemap.xml, hook sitemap.collect_urls, admin nastavení."
+}

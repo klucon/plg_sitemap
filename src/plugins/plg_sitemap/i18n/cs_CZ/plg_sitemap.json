@@ -1,0 +1,12 @@
+{
+  "extensions.name.plg_sitemap": "Sitemap XML",
+  "permissions.sitemap.manage": "Správa sitemapy",
+
+  "sitemap.admin.heading": "Sitemap XML",
+  "sitemap.admin.enabled": "Sitemap aktivní",
+  "sitemap.admin.include_homepage": "Zahrnout domovskou stránku",
+  "sitemap.admin.custom_urls": "Vlastní URL (JSON pole)",
+  "sitemap.admin.save": "Uložit nastavení",
+  "sitemap.admin.preview": "Náhled sitemapy",
+  "sitemap.admin.updated_at": "Naposledy změněno"
+}
